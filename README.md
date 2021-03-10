@@ -1,8 +1,5 @@
 # Video Conferencing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 https://video-conferencing-app-pwr.herokuapp.com/
 
 ## Available Scripts

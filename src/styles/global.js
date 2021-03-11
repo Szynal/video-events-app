@@ -1,8 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import chat from './css/chat';
-import voxeet from './css/voxeet';
-
 export default createGlobalStyle`
     * {
         outline: none;
@@ -17,8 +14,8 @@ export default createGlobalStyle`
         background-color: ${({ theme }) => theme.color.background};
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-            sans-serif;
+          "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         min-height: 100vh;
@@ -39,9 +36,4 @@ export default createGlobalStyle`
     p {
         margin: 0;
     }
-    input {
-        outline: none !important;
-    }
-    ${chat}
-    ${voxeet}
 `;

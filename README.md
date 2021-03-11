@@ -6,7 +6,7 @@ https://video-conferencing-app-pwr.herokuapp.com/
 
 Ensure that you have the following installed on your machine:
 
-* Node.js (v14.16.0 or above
+* [ Node.js](https://nodejs.org/en/) (v14.16.0 or above)
 
 And, you’ll need to have created free accounts with the following services:
 
@@ -15,9 +15,7 @@ And, you’ll need to have created free accounts with the following services:
 * [Dolby.io](https://auth.dolby.io/realms/Dolby.io/protocol/openid-connect/auth?client_id=dolby-io-website&redirect_uri=https%3A%2F%2Fdolby.io%2Fdashboard&state=651dfb2b-136c-45b4-930b-7719d5e1a7ce&response_mode=fragment&response_type=code&scope=openid&nonce=90ab9c07-a5d8-4b5a-be77-ab47cf93bc18) (for video conferencing)
 
 
-To follow along with the rest of this post, you will need Node.js and npm installed.
-
-https://nodejs.org/en/
+## Running the application
 
 In the project directory, you can run:
 

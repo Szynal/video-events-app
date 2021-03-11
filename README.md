@@ -2,6 +2,14 @@
 
 https://video-conferencing-app-pwr.herokuapp.com/
 
+## Prerequisites
+
+Make sure that you have installed the following runtime environments:
+
+* JavaScript/Node.js
+* React
+* Redux/Redux Saga
+
 ## Getting started
 
 To follow along with the rest of this post, you will need Node.js and npm installed.

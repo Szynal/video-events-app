@@ -4,6 +4,10 @@ https://video-conferencing-app-pwr.herokuapp.com/
 
 ## Getting started
 
+To follow along with the rest of this post, you will need Node.js and npm installed.
+
+https://nodejs.org/en/
+
 In the project directory, you can run:
 
 ### `npm start`

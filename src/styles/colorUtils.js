@@ -232,7 +232,7 @@ export function lighten(color, coefficient) {
     coefficient = clamp(coefficient, 0, 1);
 
     if (color.type.indexOf("hsl") > -1) {
-        color.values[2] += (100 - color.values[2]) * coefficient;
+        color.values[2] += (100 - color.values[2]) * coefficient;   
     } else if (color.type.indexOf("rgb") > -1) {
         for (let i = 0; i < 3; i++) {
         color.values[i] += (255 - color.values[i]) * coefficient;

@@ -6,4 +6,4 @@ export default {
     red: '#DC4C40',
     purple: '#6E7FFE',
     white: '#ffffff',
-};
+};  

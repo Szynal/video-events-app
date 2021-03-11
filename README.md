@@ -3,7 +3,7 @@
 
 
 
-<img align="left" width="100" height="100" src="https://icons-for-free.com/iconfiles/png/512/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png"> 
+<img align="left" width="100" height="100" src="https://video-conferencing-app-pwr.herokuapp.com/"> 
 
 ## Host of the frontend application:
 

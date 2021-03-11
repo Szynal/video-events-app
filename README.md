@@ -2,7 +2,6 @@
 
 https://video-conferencing-app-pwr.herokuapp.com/
 
-https://raw.githubusercontent.com/Sonihal/moveclient/master/group_name_and_id.JPG
 
 ## Getting started
 

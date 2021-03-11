@@ -4,11 +4,15 @@ https://video-conferencing-app-pwr.herokuapp.com/
 
 ## Prerequisites
 
-Make sure that you have installed the following runtime environments:
+Ensure that you have the following installed on your machine:
 
-* JavaScript/Node.js
-* React
-* Redux/Redux Saga
+* Node.js (v14.16.0 or above
+
+And, you’ll need to have created free accounts with the following services:
+
+* Heroku (for hosting the API)
+* Stream (for real-time chat functionality)
+* Voxeet (for video conferencing)
 
 ## Getting started
 

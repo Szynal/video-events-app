@@ -26,7 +26,7 @@ function App() {
                 <Router history={history}>
                     <>
                         <Switch>
-                            <Route path='/:conferenceAlias' component={Conference} />
+                            <Route  component={Conference} />
                         </Switch>
                         <GlobalStyles />
                     </>

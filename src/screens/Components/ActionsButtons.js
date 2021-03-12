@@ -1,60 +1,108 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // Components //
+import {
+    ChatIcon,
+    CloseIcon,
+    HangUpIcon,
+    MicOffIcon,
+    MicOnIcon,
+    VideoOffIcon,
+    VideoOnIcon,
+    PeopleIcon,
+    SettingsIcon,
+    ShareScreenIcon,
+    ShareScreenOffIcon,
+} from 'components/Icons';
+import ActionButton from './ActionButton';
+
 const Root = styled.div`
-    height: ${({ size }) => size}px;
-    width: ${({ size }) => size}px;
-    border-radius: 50%;
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 16px 48px;
+    margin-right: ${({ sidebarOpen }) => (sidebarOpen ? 376 : 0)}px;
+    transition: margin-right 250ms;
+`;
+
+const MainControls = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }) => theme.color.slate};
-    cursor: pointer;
-    user-select: none;
-    transition: 200ms ease-out;
-    & + & {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+`;
+
+const Actions = styled.div`
+    display: flex;
+    align-items: center;
+    & > * + * {
         margin-left: 16px;
     }
-    &:hover {
-        background-color: ${({ theme }) => theme.colorUtils.lighten(theme.color.slate, 0.1)};
-    }
 `;
 
-const Badge = styled.div`
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: ${({ theme }) => theme.color.red};
-    bottom: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-`;
-
-const ActionButton = ({ color, enabled, icon: Icon, onClick, showBadge, size }) => (
-    <Root enabled={enabled} size={size} onClick={onClick}>
-        <Icon color={color} size={size / 2} />
-        {showBadge ? <Badge /> : null}
-    </Root>
-);
-
-ActionButton.propTypes = {
-    color: PropTypes.string,
-    enabled: PropTypes.bool,
-    icon: PropTypes.func.isRequired,
-    onClick: PropTypes.func,
-    showBadge: PropTypes.bool,
-    size: PropTypes.number.isRequired,
+const ActionsButtons = ({
+    attendeesChatOpened,
+    attendeesListOpened,
+    attendeesSettingsOpened,
+    isMuted,
+    isScreenshare,
+    leave,
+    toggleAttendeesChat,
+    toggleAttendeesList,
+    toggleAttendeesSettings,
+    toggleMicrophone,
+    toggleScreenShare,
+    toggleVideo,
+    videoEnabled,
+    unreadCount = 0,
+    ...props
+}) => {
+    const sidebarOpen = attendeesChatOpened || attendeesListOpened;
+    return (
+        <Root sidebarOpen={sidebarOpen}>
+            <Actions>
+                <ActionButton
+                    icon={attendeesSettingsOpened ? CloseIcon : SettingsIcon}
+                    onClick={toggleAttendeesSettings}
+                    size={40}
+                />
+                <ActionButton
+                    icon={isScreenshare ? ShareScreenOffIcon : ShareScreenIcon}
+                    onClick={toggleScreenShare}
+                    size={40}
+                />
+            </Actions>
+            <MainControls>
+                <ActionButton icon={isMuted ? MicOffIcon : MicOnIcon} onClick={toggleMicrophone} size={40} />
+                <ActionButton color='red' icon={HangUpIcon} onClick={leave} />
+                <ActionButton
+                    enabled={videoEnabled}
+                    icon={videoEnabled ? VideoOnIcon : VideoOffIcon}
+                    onClick={toggleVideo}
+                    size={40}
+                />
+            </MainControls>
+            <Actions>
+                <ActionButton
+                    icon={attendeesListOpened ? CloseIcon : PeopleIcon}
+                    onClick={toggleAttendeesList}
+                    size={40}
+                />
+                <ActionButton
+                    showBadge={unreadCount > 0}
+                    icon={attendeesChatOpened ? CloseIcon : ChatIcon}
+                    onClick={toggleAttendeesChat}
+                    size={40}
+                />
+            </Actions>
+        </Root>
+    );
 };
 
-ActionButton.defaultProps = {
-    color: 'white',
-    enabled: false,
-    onClick: () => {},
-    size: 64,
-};
-
-export default ActionButton;
+export default ActionsButtons;

@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import voxeet from "./css/voxeet";
-
 export default createGlobalStyle`
     * {
         outline: none;
@@ -26,7 +24,7 @@ export default createGlobalStyle`
         align-items: stretch;
         flex-direction: column;
     }
-    #root { 
+    #root {
         display: flex;
         align-items: stretch;
         flex-direction: column;
@@ -38,5 +36,4 @@ export default createGlobalStyle`
     p {
         margin: 0;
     }
-    ${voxeet}
 `;

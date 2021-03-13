@@ -32,8 +32,6 @@ class Conference extends Component {
         const { match } = this.props;
         return (
             <ConferenceRoom
-                attendeesChat={() => null}
-                actionsButtons={() => null}
                 isWidget={false}
                 autoJoin
                 kickOnHangUp

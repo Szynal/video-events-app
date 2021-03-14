@@ -1,5 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+
+// Selectors //
+import { createStructuredSelector } from 'reselect';
+import { makeSelectUnreadCount } from 'data/chat/selectors';
 
 // Components //
 import {
@@ -15,7 +20,6 @@ import {
     ShareScreenIcon,
     ShareScreenOffIcon,
 } from 'components/Icons';
-
 import ActionButton from './ActionButton';
 
 const Root = styled.div`
@@ -47,7 +51,7 @@ const Actions = styled.div`
     }
 `;
 
-const ActionsButtons = ({
+const ActionButtons = ({
     attendeesChatOpened,
     attendeesListOpened,
     attendeesSettingsOpened,
@@ -61,9 +65,10 @@ const ActionsButtons = ({
     toggleScreenShare,
     toggleVideo,
     videoEnabled,
-    unreadCount = 0,
+    unreadCount,
     ...props
 }) => {
+    console.log(props);
     const sidebarOpen = attendeesChatOpened || attendeesListOpened;
     return (
         <Root sidebarOpen={sidebarOpen}>
@@ -106,4 +111,8 @@ const ActionsButtons = ({
     );
 };
 
-export default ActionsButtons;
+const mapStateToProps = createStructuredSelector({
+    unreadCount: makeSelectUnreadCount(),
+});
+
+export default connect(mapStateToProps)(ActionButtons);

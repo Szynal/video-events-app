@@ -8,10 +8,15 @@ import history from 'utils/history';
 import { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme';
 import GlobalStyles from 'styles/global';
-import '@voxeet/react-components/dist/voxeet-react-components.css';
+import '@voxeet/react-components/dist/voxeet-react-components.css'; // Can you be customize, refer to https://github.com/voxeet/voxeet-assets-react-components
 
 // Screens //
-import Conference from 'screens/Conference/Conference';
+import Conference from 'screens/Conference';
+import Login from 'screens/Login';
+
+// Containers //
+import AuthedRoute from 'containers/AuthedRoute';
+import Snackbar from 'containers/Snackbar';
 
 // Redux //
 import { Provider } from 'react-redux';
@@ -26,9 +31,11 @@ function App() {
                 <Router history={history}>
                     <>
                         <Switch>
-                            <Route path='/:conferenceAlias' component={Conference} />
+                            <AuthedRoute path='/:conferenceAlias' component={Conference} />
+                            <Route path='/' component={Login} />
                         </Switch>
                         <GlobalStyles />
+                        <Snackbar />
                     </>
                 </Router>
             </Provider>

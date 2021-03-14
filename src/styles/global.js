@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import voxeet from "./css/voxeet";
 
+import chat from './css/chat';
+import voxeet from './css/voxeet';
 
 export default createGlobalStyle`
     * {
@@ -8,10 +9,12 @@ export default createGlobalStyle`
         box-sizing: border-box;
         -webkit-tap-highlight-color: transparent;
     }
+
     html {
         height: 100%;
         width: 100%;
     }
+
     body {
         background-color: ${({ theme }) => theme.color.background};
         margin: 0;
@@ -26,17 +29,26 @@ export default createGlobalStyle`
         align-items: stretch;
         flex-direction: column;
     }
+
     #root {
         display: flex;
         align-items: stretch;
         flex-direction: column;
         flex: 1;
     }
+
     h1, h2, h3, h4, h5, h6, h7, h8 {
         margin: 0;
     }
+
     p {
         margin: 0;
     }
+
+    input {
+        outline: none !important;
+    }
+
+    ${chat}
     ${voxeet}
 `;

@@ -33,12 +33,13 @@ class Conference extends Component {
         };
     }
 
+ 
     render() {
         const { match } = this.props;
         return (
             <ConferenceRoom
                 attendeesChat={() => null}
-                actionsButtons={() => null}
+                actionsButtons={ActionsButtons}
                 isWidget={false}
                 autoJoin
                 kickOnHangUp
@@ -50,5 +51,6 @@ class Conference extends Component {
         );
     }
 }
+
 
 export default Conference;

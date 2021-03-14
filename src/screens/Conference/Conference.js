@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { ConferenceRoom } from '@voxeet/react-components';
 
+
+// Components //
+import ActionsButtons from './components/ActionsButtons';
+
+
 class Conference extends Component {
     handleOnConnect = () => {
         console.log('Participant connected');
@@ -32,6 +37,8 @@ class Conference extends Component {
         const { match } = this.props;
         return (
             <ConferenceRoom
+                attendeesChat={() => null}
+                actionsButtons={() => null}
                 isWidget={false}
                 autoJoin
                 kickOnHangUp

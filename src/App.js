@@ -11,7 +11,7 @@ import GlobalStyles from 'styles/global';
 import '@voxeet/react-components/dist/voxeet-react-components.css';
 
 // Screens //
-import Conference from 'screens/Conference';
+import Conference from 'screens/Conference/Conference';
 
 // Redux //
 import { Provider } from 'react-redux';

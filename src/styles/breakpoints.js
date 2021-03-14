@@ -1,4 +1,3 @@
-
 export default {
     xs: 600,
     sm: 900,

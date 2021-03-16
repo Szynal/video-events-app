@@ -13,8 +13,8 @@ import '@voxeet/react-components/dist/voxeet-react-components.css';
 
 
 // Redux //
-import { Provider } from 'react-redux';
-import createStore from 'data/createStore';
+// import { Provider } from 'react-redux';
+// import createStore from 'data/createStore';
 
 function App() {
   return (

@@ -1,39 +1,25 @@
-import React from 'react';
-
-// Router //
-import { Router, Switch, Route } from 'react-router-dom';
-import history from 'utils/history';
-
-// Styles //
-import { ThemeProvider } from 'styled-components';
-import theme from 'styles/theme';
-import GlobalStyles from 'styles/global';
-import '@voxeet/react-components/dist/voxeet-react-components.css';
-
-// Screens //
-import Conference from 'screens/Conference';
-
-// Redux //
-import { Provider } from 'react-redux';
-import createStore from 'data/createStore';
-
-const store = createStore();
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-    return (
-        <ThemeProvider theme={theme}>
-            <Provider store={store}>
-                <Router history={history}>
-                    <>
-                        <Switch>
-                            <Route path='/:conferenceAlias' component={Conference} />
-                        </Switch>
-                        <GlobalStyles />
-                    </>
-                </Router>
-            </Provider>
-        </ThemeProvider>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;

@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Router //
+import { Router, Switch, Route } from 'react-router-dom';
+import history from 'utils/history';
+
+// Styles //
+import { ThemeProvider } from 'styled-components';
+import theme from 'styles/theme';
+import GlobalStyles from 'styles/global';
+import '@voxeet/react-components/dist/voxeet-react-components.css';
+
 function App() {
   return (
     <div className="App">

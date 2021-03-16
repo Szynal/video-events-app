@@ -3,6 +3,7 @@ import './App.css';
 
 // Router //
 import { Router, Switch, Route } from 'react-router-dom';
+// import history from 'utils/history';
 
 // Styles //
 import { ThemeProvider } from 'styled-components';
@@ -10,9 +11,14 @@ import theme from 'styles/theme';
 import GlobalStyles from 'styles/global';
 import '@voxeet/react-components/dist/voxeet-react-components.css';
 
+
+// Redux //
+import { Provider } from 'react-redux';
+import createStore from 'data/createStore';
+
 function App() {
   return (
-
+    
   <ThemeProvider theme={theme}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -104,8 +104,9 @@ class Login extends Component {
 
     get userName() {
         const { user } = this.props;
-        return user.name.replace(/_/g, ' ');
-    }
+   //     return user.name.replace(/_/g, ' ');
+        return user.name;
+}
 
     startCall = () => {
         const { history } = this.props;

@@ -34,7 +34,7 @@ https://video-conferencing-app-pwr.herokuapp.com/  <br/>
 
 ![Preview Image](img/preview.png?raw=true "Preview Image")
 
-## Prerequisites
+## Prerequisites [For developers]
 
 You’ll want to make sure that you have a decent understanding of the following:
 
@@ -56,10 +56,10 @@ Ensure that you have the following installed on your machine:
 * [Stream](https://getstream.io/chat/) (for real-time chat functionality)
 * [Dolby.io](https://auth.dolby.io/realms/Dolby.io/protocol/openid-connect/auth?client_id=dolby-io-website&redirect_uri=https%3A%2F%2Fdolby.io%2Fdashboard&state=651dfb2b-136c-45b4-930b-7719d5e1a7ce&response_mode=fragment&response_type=code&scope=openid&nonce=90ab9c07-a5d8-4b5a-be77-ab47cf93bc18) (for video conferencing)
 
-## Getting started
+## Getting started [For developers]
 
 
-## Running the application
+## Running the application [For developers]
 
 In the project directory, you can run:
 

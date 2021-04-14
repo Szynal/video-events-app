@@ -60,7 +60,7 @@ Ensure that you have the following installed on your machine:
 
  This project only includes the Frontend UI! 
  
- Happy coding! ✌️
+  Happy coding! ✌️
  
  Step 1: Open Your terminal in the target directory and run:
  
@@ -80,6 +80,53 @@ Ensure that you have the following installed on your machine:
  Step 3: Setting up the Backend API & Authentication
  
  >TODO :) 
+ >
+
+## Backend Project Structure
+
+> **_Backend API is not meant for production as there is no auth in place. Please use carefully in testing and development environments only!_**
+
+ *Full Breakdown*
+
+ ```sh
+ .
+ ├── LICENSE
+ ├── Procfile
+ ├── README.md
+ ├── app.json
+ ├── env.example
+ ├── package.json
+ ├── src
+ │   ├── controllers
+ │   │   └── v1
+ │   │       └── token
+ │   │           ├── index.js
+ │   │           └── token.action.js
+ │   ├── index.js
+ │   ├── routes
+ │   │   └── token.js
+ │   └── utils
+ │       └── controllers.js
+ └── yarn.lock
+ ```
+
+ *Controllers:*
+
+ ```sh
+ .
+ └── v1
+     └── token
+         ├── index.js
+         └── token.action.js
+ ```
+
+ *Token:*
+
+ ```sh
+ .
+ └── token.js
+ ```
+
 
 ## Running the application [for developers]
 

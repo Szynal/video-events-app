@@ -5,8 +5,14 @@
 
 <img align="left" width="100" height="100" src="https://icons-for-free.com/iconfiles/png/512/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png"> 
 
-## Host of the frontend application:
 
+
+## Overview:
+
+The project is carried out as part of an additional course at the Faculty of Electronics of the Wrocław University of Technology. The project is carried out by specialists from Dolby Poland Sp. z o.o. from Wroclaw.
+
+
+## Host of the frontend application:
 
 https://video-conferencing-app-pwr.herokuapp.com/  <br/>
 

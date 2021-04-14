@@ -9,8 +9,7 @@
 
 ## Overview:
 
-The project is carried out as part of an additional course at the Faculty of Electronics of the Wrocław University of Technology. 
-
+The project is carried out as part of an additional course at the Faculty of Electronics of the [Wrocław University of Technology](http://pwr.edu.pl/en/).
 SUBJECT OBJECTIVES
 
   * Learning about multimedia processing methods

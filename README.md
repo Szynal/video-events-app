@@ -62,17 +62,18 @@ Ensure that you have the following installed on your machine:
  
  Step 1: Open Your terminal in the target directory and run:
  
-```bash
-# Node Package Execute
-npx create-react-app your_application_name
-```
- 
+ ```bash
+ # Node Package Execute
+ npx create-react-app your_application_name
+ ```
  > Note: With create-react-app, you must prepend all environment variables with REACT_APP.
  > You will need the following environment variables in your .env file:
  >
  > * REACT_APP_STREAM_KEY
  > * REACT_APP_VOX_KEY
  > * REACT_APP_VOX_SECRET
+ 
+ Step 2: Replace all files with those contained in this repository
 
 ## Running the application [for developers]
 

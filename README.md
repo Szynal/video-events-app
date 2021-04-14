@@ -60,6 +60,13 @@ Ensure that you have the following installed on your machine:
 
  This project only includes the Frontend UI!
  
+ Step 1: Open Your terminal in the target directory and run:
+ 
+```bash
+# Node Package Execute
+npx create-react-app your_application_name in your terminal.
+```
+ 
  > Note: With create-react-app, you must prepend all environment variables with REACT_APP.
  > You will need the following environment variables in your .env file:
  >

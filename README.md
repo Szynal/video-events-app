@@ -58,7 +58,9 @@ Ensure that you have the following installed on your machine:
 
 ## Getting started [for developers]
 
- This project only includes the Frontend UI! Happy coding! ✌️
+ This project only includes the Frontend UI! 
+ 
+ Happy coding! ✌️
  
  Step 1: Open Your terminal in the target directory and run:
  

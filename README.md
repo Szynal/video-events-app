@@ -22,7 +22,8 @@ The project is carried out by specialists from [Dolby](https://www.dolby.com/) P
 
 ## Project assumptions
 
-> TODO
+ The aim of this project is to create a web application enable of concerts streaming.
+ > TODO
 
 ## Host of the frontend application:
 

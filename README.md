@@ -1,10 +1,7 @@
 # Video Conferencing App  <br/>
 
 
-
-
 <img align="left" width="100" height="100" src="https://icons-for-free.com/iconfiles/png/512/design+development+facebook+framework+mobile+react+icon-1320165723839064798.png"> 
-
 
 
 ## Overview:
@@ -22,6 +19,10 @@ The project is carried out as part of an additional course at the Faculty of Ele
 >  * Acquiring the skills to automate software tests
 
 The project is carried out by specialists from [Dolby](https://www.dolby.com/) Poland Sp. z o.o. from Wroclaw.
+
+## Project assumptions
+
+> TODO
 
 ## Host of the frontend application:
 

@@ -58,6 +58,7 @@ Ensure that you have the following installed on your machine:
 
 ## Getting started [for developers]
 
+!This project only includes the Frontend UI!
 
 ## Running the application [for developers]
 

@@ -64,7 +64,7 @@ Ensure that you have the following installed on your machine:
  
 ```bash
 # Node Package Execute
-npx create-react-app your_application_name in your terminal.
+npx create-react-app your_application_name
 ```
  
  > Note: With create-react-app, you must prepend all environment variables with REACT_APP.

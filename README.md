@@ -20,7 +20,7 @@ SUBJECT OBJECTIVES
   * Acquiring the ability to use tools that facilitate planning and running a programming project
   * Acquiring the skills to automate software tests
 
-The project is carried out by specialists from Dolby Poland Sp. z o.o. from Wroclaw.
+The project is carried out by specialists from [Dolby](https://www.dolby.com/) Poland Sp. z o.o. from Wroclaw.
 
 ## Host of the frontend application:
 

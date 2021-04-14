@@ -58,7 +58,14 @@ Ensure that you have the following installed on your machine:
 
 ## Getting started [for developers]
 
-!This project only includes the Frontend UI!
+ This project only includes the Frontend UI!
+ 
+ > Note: With create-react-app, you must prepend all environment variables with REACT_APP.
+ > You will need the following environment variables in your .env file:
+ >
+ > * REACT_APP_STREAM_KEY
+ > * REACT_APP_VOX_KEY
+ > * REACT_APP_VOX_SECRET
 
 ## Running the application [for developers]
 

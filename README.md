@@ -9,8 +9,19 @@
 
 ## Overview:
 
-The project is carried out as part of an additional course at the Faculty of Electronics of the Wrocław University of Technology. The project is carried out by specialists from Dolby Poland Sp. z o.o. from Wroclaw.
+The project is carried out as part of an additional course at the Faculty of Electronics of the Wrocław University of Technology. 
 
+SUBJECT OBJECTIVES
+
+  * Learning about multimedia processing methods
+  * Acquiring knowledge of programming multimedia processing applications
+  * Acquisition of knowledge in the use of multimedia containers
+  * Acquisition of knowledge in the field of software testing
+  * Acquiring the ability to analyze multimedia signals
+  * Acquiring the ability to use tools that facilitate planning and running a programming project
+  * Acquiring the skills to automate software tests
+
+The project is carried out by specialists from Dolby Poland Sp. z o.o. from Wroclaw.
 
 ## Host of the frontend application:
 

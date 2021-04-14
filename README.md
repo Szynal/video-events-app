@@ -45,7 +45,7 @@ You’ll want to make sure that you have a decent understanding of the following
 You will also want to ensure that you have the following installed on your machine:
 
   * Homebrew (Latest)
-  * Node.js (v12.10.0 or above)
+  * [Node.js](https://nodejs.org/en/) (v14.16.0 or above)
   * Yarn (Latest)
   * Create React App (CRA)
 

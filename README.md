@@ -1,7 +1,7 @@
 # Video Events App  <br/>
 
 
-<img align="left" width="100" height="100" src="img/logo.png?raw=true"> 
+<img align="left" width="100" height="100" src="img/logo_01.png?raw=true"> 
 
 ## Overview:
 

@@ -12,9 +12,9 @@ https://video-conferencing-app-pwr.herokuapp.com/  <br/>
 
 ## Preview Images:
 
-![Cavern of Wrath](img/preview.png?raw=true "Leveling Guide in The Cavern of Wrath")
+![Welcome](img/welcome.png?raw=true "Preview welcome screen")
 
-![Coast](previews/LevelingGuidePreview2.png?raw=true "Leveling Guide in The Coast Act 6")
+![Preview Image](img/preview.png?raw=true "Preview Image")
 
 ## Getting started
 
